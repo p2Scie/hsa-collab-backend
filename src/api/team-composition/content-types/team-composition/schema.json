@@ -1,0 +1,30 @@
+{
+  "kind": "collectionType",
+  "collectionName": "team_compositions",
+  "info": {
+    "singularName": "team-composition",
+    "pluralName": "team-compositions",
+    "displayName": "team composition",
+    "description": ""
+  },
+  "options": {
+    "draftAndPublish": true
+  },
+  "pluginOptions": {},
+  "attributes": {
+    "rotation": {
+      "type": "enumeration",
+      "enum": [
+        "matin",
+        "soir"
+      ],
+      "required": true
+    },
+    "member": {
+      "type": "component",
+      "repeatable": true,
+      "component": "team.day-team",
+      "required": true
+    }
+  }
+}

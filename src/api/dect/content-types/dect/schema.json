@@ -1,0 +1,20 @@
+{
+  "kind": "collectionType",
+  "collectionName": "dects",
+  "info": {
+    "singularName": "dect",
+    "pluralName": "dects",
+    "displayName": "dect"
+  },
+  "options": {
+    "draftAndPublish": true
+  },
+  "pluginOptions": {},
+  "attributes": {
+    "number": {
+      "type": "string",
+      "required": true,
+      "unique": true
+    }
+  }
+}
