@@ -20,11 +20,10 @@
       ],
       "required": true
     },
-    "member": {
+    "group": {
       "type": "component",
       "repeatable": true,
-      "component": "team.day-team",
-      "required": true
+      "component": "team.group"
     }
   }
 }

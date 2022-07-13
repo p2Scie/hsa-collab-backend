@@ -12,14 +12,10 @@
   },
   "pluginOptions": {},
   "attributes": {
-    "lastname": {
+    "fullname": {
       "type": "string",
       "required": true,
       "unique": false
-    },
-    "firstname": {
-      "type": "string",
-      "required": true
     },
     "profile_picture": {
       "type": "media",
@@ -35,13 +31,8 @@
     "dect": {
       "type": "relation",
       "relation": "oneToOne",
-      "target": "api::dect.dect"
-    },
-    "zone": {
-      "type": "relation",
-      "relation": "manyToOne",
-      "target": "api::sector.sector",
-      "inversedBy": "team_members"
+      "target": "api::dect.dect",
+      "inversedBy": "team_member"
     }
   }
 }
